@@ -3,6 +3,14 @@ import { Form, Field } from 'react-final-form'
 import './App.css';
 
 function App() {
+  const onSubmit = (e) => {
+    debugger
+  };
+
+  const validate =(e) => {
+    debugger
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,8 +28,6 @@ function App() {
           )
         }
         />
-        
-        
       </header>
     </div>
   );
