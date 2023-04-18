@@ -17,13 +17,13 @@ function App() {
           onSubmit={onSubmit}
           validate={validate}
           render={({ handleSubmit }) => (
-            <Form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <div className='field'>
                 <label>First Name</label>
                 <Field name="firstName" component="input" placeholder="First Name" />
               </div>
               <button type='submit'>Submit</button>
-            </Form>
+            </form>
           )
         }
         />
