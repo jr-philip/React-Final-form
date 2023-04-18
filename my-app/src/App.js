@@ -1,4 +1,3 @@
-
 import { Form, Field } from 'react-final-form'
 import './App.css';
 
@@ -7,8 +6,8 @@ function App() {
     debugger
   };
 
-  const validate =(e) => {
-    debugger
+  const validate = (e) => {
+    //debugger
   };
 
   return (
@@ -19,7 +18,7 @@ function App() {
           validate={validate}
           render={({ handleSubmit }) => (
             <Form onSubmit={handleSubmit}>
-              <div>
+              <div className='field'>
                 <label>First Name</label>
                 <Field name="firstName" component="input" placeholder="First Name" />
               </div>

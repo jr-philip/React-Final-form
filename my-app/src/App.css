@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.field{
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+button{
+  padding: 10px 15px ;
+}
