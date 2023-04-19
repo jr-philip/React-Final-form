@@ -22,6 +22,20 @@ function App() {
                 <label>First Name</label>
                 <Field name="firstName" component="input" placeholder="First Name" />
               </div>
+
+              <div>
+                <Field
+                  name="bio"
+                  render={({ input, meta }) => (
+              <div className='field'>
+                <label>Bio</label>
+                <textarea {...input} />
+                {meta.touched && meta.error && <span>{meta.error}</span>}
+              </div>
+                )}
+              />
+              </div>
+
               <div className='field'>
                 <button type='submit'>Submit</button>
               </div>
