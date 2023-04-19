@@ -23,12 +23,12 @@ function App() {
                 <Field name="firstName" component="input" placeholder="First Name" />
               </div>
 
-              <div>
+              <div className='field'>
+                 <label>Bio</label>
                 <Field
                   name="bio"
                   render={({ input, meta }) => (
-              <div className='field'>
-                <label>Bio</label>
+              <div>
                 <textarea {...input} />
                 {meta.touched && meta.error && <span>{meta.error}</span>}
               </div>
