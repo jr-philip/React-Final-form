@@ -1,5 +1,6 @@
 import { Form, Field } from 'react-final-form'
 import './App.css';
+import Input from './Input';
 
 function App() {
 
@@ -33,6 +34,18 @@ function App() {
               <div className='field'>
                 <label>First Name</label>
                 <Field name="firstName" component="input" placeholder="FirstName" />
+              </div>
+
+              <div className='field'>
+                <label>Second Name</label>
+                <Field name="secondName">
+                  {({ input, meta }) => (
+                   <div>
+                    <Input {... input} />
+                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                   </div>
+                  )}
+                </Field>
               </div>
 
               <div className='field'>
