@@ -30,6 +30,18 @@ function App() {
               </div>
 
               <div className='field'>
+                <label>Phone</label>
+                <Field name="phone">
+                  {({ input, meta }) => (
+                   <div>
+                    <input type="text" {...input} placeholder="Phone" />
+                    {meta.touched && meta.error && <span>{meta.error}</span>}
+                   </div>
+                  )}
+                </Field>
+              </div>
+
+              <div className='field'>
                  <label>Bio</label>
                 <Field
                   name="bio"
