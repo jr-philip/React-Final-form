@@ -7,7 +7,13 @@ function App() {
   };
 
   const validate = (e) => {
-    //debugger
+    const errors = {};
+
+    if(e.bio && e.bio.length < 5){
+      errors.bio='To short'
+    }
+
+    return errors
   };
 
   return (
@@ -30,7 +36,7 @@ function App() {
                   render={({ input, meta }) => (
               <div>
                 <textarea {...input} />
-                {meta.touched && meta.error && <span>{meta.error}</span>}
+                {meta.touched && meta.error && <div>{meta.error}</div>}
               </div>
                 )}
               />
