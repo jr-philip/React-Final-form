@@ -26,7 +26,7 @@ function App() {
             <form onSubmit={handleSubmit}>
               <div className='field'>
                 <label>First Name</label>
-                <Field name="firstName" component="input" placeholder="First Name" />
+                <Field name="firstName" component="input" placeholder="FirstName" />
               </div>
 
               <div className='field'>
@@ -34,7 +34,7 @@ function App() {
                 <Field name="phone">
                   {({ input, meta }) => (
                    <div>
-                    <input type="text" {...input} placeholder="Phone" />
+                    <input type="text" {...input} placeholder="(000)-0000-0000" />
                     {meta.touched && meta.error && <span>{meta.error}</span>}
                    </div>
                   )}
