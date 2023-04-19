@@ -2,6 +2,11 @@ import { Form, Field } from 'react-final-form'
 import './App.css';
 
 function App() {
+
+  const initialData ={
+    firstName: 'Pizzy'
+  }
+
   const onSubmit = (e) => {
     debugger
   };
@@ -22,6 +27,7 @@ function App() {
         <Form
           onSubmit={onSubmit}
           validate={validate}
+          initialValues={initialData}
           render={({ handleSubmit }) => (
             <form onSubmit={handleSubmit}>
               <div className='field'>
