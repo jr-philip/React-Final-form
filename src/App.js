@@ -37,7 +37,7 @@ function App() {
               </div>
 
               <div className='field'>
-                <label>Second Name</label>
+                <label>Last Name</label>
                 <Field name="secondName">
                   {({ input, meta }) => (
                    <div>
